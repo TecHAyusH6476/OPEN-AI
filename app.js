@@ -16,6 +16,6 @@ app.use('/', (req, res) => {
   res.send('hello worlds')
 })
 
-app.listen(3000, '0.0.0.0', () => {
-  console.log('Server is running on port 3000')
+app.listen(5000, () => {
+  console.log('backend running')
 })
