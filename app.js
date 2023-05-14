@@ -12,6 +12,9 @@ app.get('/map/:stringParam', (req, res) => {
   const mappedString = stringMap[stringParam] || 'No mapping found'
   res.send(mappedString)
 })
+app.use('/', (req, res) => {
+  res.send('hello worlds')
+})
 
 app.listen(3000, () => {
   console.log('Server is running on port 3000')
